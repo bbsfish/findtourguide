@@ -1,0 +1,19 @@
+/**
+ * グローバルスタイル
+ * @/app/layout.js にグローバルインポートされる
+ * スタイルは、子要素や各コンポーネントへの影響を最小限にし、影響を与える場合はコメントを残すこと
+ */
+
+html {
+  zoom: 1;
+  font-size: 16px; // 子要素の font-size 等には、rem をできるだけ使用
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  --trs-duration: .6s; // hover 等の基本遅延設定
+}

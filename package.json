@@ -1,0 +1,25 @@
+{
+  "name": "tourguide",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.6",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "next": "14.1.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass": "^1.74.1",
+    "the-new-css-reset": "^1.11.2"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "webpack": "^5.91.0"
+  }
+}

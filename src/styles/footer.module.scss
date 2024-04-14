@@ -1,0 +1,14 @@
+/**
+ * フッター
+ */
+@use './colors.scss' as c;
+
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+
+  p {
+    text-align: center;
+  }
+}

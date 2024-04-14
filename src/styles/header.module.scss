@@ -1,0 +1,51 @@
+/**
+ * ヘッダー
+ */
+@use './colors.scss' as c;
+
+.header {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  &__main {
+    display: flex;
+    gap: 2rem;
+    & > div {
+      display: table;
+  
+      .item {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    
+    .logo {
+      &:hover {
+        cursor: pointer;
+      }
+      svg {
+        width: 30px;
+      }
+    }
+  
+    .title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+
+  &__sub {
+      .cart {
+        height: 100%;
+        &:hover {
+          cursor: pointer;
+        }
+        svg {
+          padding-top: 5px;
+          width: 30px;
+        }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+/**
+ * サイトで使うカラーコード設定
+ */
+$colorcodes: (
+  // 黒系
+  'black': (
+    'default': rgb(0, 0, 0),
+    'light': rgb(53, 53, 53),
+  ),
+
+  // 白系
+  'white': (
+    'default': rgb(255, 255, 255),
+    'dark': rgb(180, 180, 180),
+  ),
+
+  // アクセント系 *系統は一色で統一すること
+  'accent': (
+    'default': rgb(0, 197, 26),
+  ),
+
+  // 各ボタンの色
+  'blue': (
+    'default': rgb(45, 45, 237),
+    'hover': rgb(69, 69, 255),
+  ),
+);
+
+/**
+ * カラーコードピッカー
+ */
+@function cp($color, $mood: 'default', $alpha: 0) {
+  $palet: map-get($map: $colorcodes, $key: $color);
+  $code: map-get($map: $palet, $key: $mood);
+  @if ($alpha == 0) {
+    @return $code;
+  }
+  @return rgba($code, $alpha);
+}
