@@ -1,0 +1,29 @@
+/**
+ * IDForm コンポーネント
+ * ID/PWD 入力画面の Form 関連スタイル
+ */
+@use '../colors.scss' as c;
+
+.idform {
+  width: 100%;
+  &__id, &__pass, &__button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  &__pass {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__button {
+    text-align: center;
+    background-color: c.cp("blue");
+    color: c.cp("white");
+    border: 0;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+      transition: var(--trs-duration);
+    }
+  }
+}

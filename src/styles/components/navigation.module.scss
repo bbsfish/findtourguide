@@ -1,0 +1,22 @@
+/**
+ * Navigation コンポーネント
+ * コンテンツ(main タグ)内のナビゲーション
+ */
+
+@use '../colors.scss' as c;
+
+.nav {
+  width: 100%;
+  padding: 1rem;
+
+  ul {
+    display: flex;
+    gap: 1rem;
+
+    li {
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

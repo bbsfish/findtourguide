@@ -5,6 +5,7 @@
 @use '../colors.scss' as c;
 
 .list {
+  list-style: none;
   margin: 1rem;
   border-bottom: 1px solid c.cp("black", "default", 0.3);
   &:first-child {

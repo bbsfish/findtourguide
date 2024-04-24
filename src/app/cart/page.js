@@ -4,6 +4,7 @@
 
 import s from '@/styles/cart.module.scss';
 import TourProductListItem from '@/app/components/TourProductListItem';
+import Navigation from "@/app/components/Navigation";
 
 const items = [
   {
@@ -26,15 +27,17 @@ const items = [
   },
 ];
 
+const nav = [
+  { label: 'foo', href: '#' },
+  { label: 'var', href: '#' },
+  { label: 'hoge', href: '#' },
+];
+
 export default function Cart() {
   return (
     <main className={s.cart}>
       <div className={s.cart__wrapper}>
-        <nav className={s.nav}>
-          <ul><a href="#">foo</a></ul>
-          <ul><a href="#">bar</a></ul>
-          <ul><a href="#">hogehoge</a></ul>
-        </nav>
+        <Navigation list={nav} />
         <section className={s.main}>
           <ul>
             {items.map((item) => {

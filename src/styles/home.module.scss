@@ -20,44 +20,12 @@
       input {
         width: 60%;
         text-align: left;
-        border: 1px solid c.cp("black");
-        background-color: c.cp("white");
-        padding: .4rem .8rem;
-
-        &::placeholder {
-          opacity: 0.6;
-        }
-        &::-ms-input-placeholder { // Edge
-          opacity: 0.6;
-        }
-        &:-ms-input-placeholder { // IE
-          opacity: 0.6;
-        }
-
-        &:focus {
-          &::placeholder {
-            opacity: 0;
-          }
-          &::-ms-input-placeholder { // Edge
-            opacity: 0;
-          }
-          &:-ms-input-placeholder { // IE
-            opacity: 0;
-          }
-        }
       }
       button {
         background-color: c.cp("accent");
         border: 1px solid c.cp("accent");
         color: c.cp("white");
-        padding: .4rem 1.3rem;
         margin-left: 1rem;
-
-        &:hover {
-          cursor: pointer;
-          box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-          transition: var(--trs-duration);
-        }
       }
     }
   }

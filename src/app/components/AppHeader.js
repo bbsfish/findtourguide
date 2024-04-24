@@ -2,7 +2,7 @@ import s from '@/styles/header.module.scss';
 
 /**
  * ヘッダー
- * @returns JSX.Element
+ * @returns {<JSX.Element>}
  */
 export default function AppHeader() {
   return (

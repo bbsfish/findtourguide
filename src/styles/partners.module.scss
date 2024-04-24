@@ -1,0 +1,30 @@
+/**
+ * パートナー
+ */
+@use './colors.scss' as c;
+
+.partners {
+  .main {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid c.cp("black");
+    border-radius: .3rem;
+    padding: 3rem 2rem;
+    h1 {
+      text-align: center;
+    }
+    .register {
+      text-align: center;
+      color: c.cp("blue");
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.mypage {
+  width: 90%;
+  margin: 0 auto;
+}

@@ -3,6 +3,7 @@
  * @/app/layout.js にグローバルインポートされる
  * スタイルは、子要素や各コンポーネントへの影響を最小限にし、影響を与える場合はコメントを残すこと
  */
+@use './colors.scss' as c;
 
 html {
   zoom: 1;
@@ -16,4 +17,48 @@ body {
 
 main {
   --trs-duration: .6s; // hover 等の基本遅延設定
+
+  /**
+   * Input 基本スタイル
+   */
+  input {
+    border: 1px solid c.cp("black");
+    border-radius: .2rem;
+    background-color: c.cp("white");
+    padding: .4rem .8rem;
+
+    &::placeholder {
+      opacity: 0.6;
+    }
+    &::-ms-input-placeholder { // Edge
+      opacity: 0.6;
+    }
+    &:-ms-input-placeholder { // IE
+      opacity: 0.6;
+    }
+
+    &:focus {
+      &::placeholder {
+        opacity: 0;
+      }
+      &::-ms-input-placeholder { // Edge
+        opacity: 0;
+      }
+      &:-ms-input-placeholder { // IE
+        opacity: 0;
+      }
+    }
+  }
+
+  /**
+   * Button 基本スタイル
+   */
+  button {
+    padding: .4rem 1.3rem;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+      transition: var(--trs-duration);
+    }
+  }
 }
